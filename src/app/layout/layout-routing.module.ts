@@ -7,7 +7,9 @@ const routes: Routes = [
     { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)},
     { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)},
     { path: 'quemsomos', loadChildren: () => import('./institucional/quemsomos/quemsomos.module').then(m => m.QuemsomosModule)},
-    { path: 'duvidas', loadChildren: () => import('./institucional/duvidas/duvidas.module').then(m => m.DuvidasModule)}
+    { path: 'duvidas', loadChildren: () => import('./institucional/duvidas/duvidas.module').then(m => m.DuvidasModule)},
+    { path: 'seguros', loadChildren: () => import('./seguros/seguros.module').then(m => m.SegurosModule)},
+    { path: 'contato', loadChildren: () => import('./contato/contato.module').then(m => m.ContatoModule)}
     ] }
 ];
 

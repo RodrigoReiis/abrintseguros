@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SegurosRoutingModule } from './seguros-routing.module';
+import { SegurosComponent } from './seguros.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [SegurosComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    SegurosRoutingModule
   ]
 })
 export class SegurosModule { }

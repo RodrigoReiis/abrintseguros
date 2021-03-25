@@ -16,29 +16,27 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav mr-auto" id="navbardrop">
       <li class="nav-item">
-        <a class="nav-link" href="index.php">HOME</a>
+        <a class="nav-link" [routerLink]="['/home']">HOME</a>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              INSTITUCIONAL
-            </a>
-
-            <div class="dropdown-menu"  aria-labelledby="navbardrop" style="font-size: 13px;">
-              <a class="dropdown-item" href="quemsomos.php">QUEM SOMOS</a>
-              <a class="dropdown-item" href="duvidasfrequentes.php">DÚVIDAS FREQUENTES</a>
-
-            </div>
+        <div ngbDropdown class="d-inline-block">
+          <a class="nav-link dropdown-toggle" id="navbardrop"  id="dropdownBasic1" ngbDropdownToggle>INSTITUCIONAL</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem [routerLink]="['/quemsomos']">QUEM SOMOS</button>
+            <button ngbDropdownItem  [routerLink]="['/duvidas']">DÚVIDAS FREQUENTES</button>
+          </div>
+        </div>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link" href="servicos.php" id="navbardrop">
+        <a class="nav-link" [routerLink]="['/seguros']" id="navbardrop">
           SEGUROS
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link scrollSuave" href="index.php#contato" id="navbardrop">
+        <a class="nav-link scrollSuave" [routerLink]="['/contato']" id="navbardrop">
           CONTATO
         </a>
       </li>
